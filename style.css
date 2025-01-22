@@ -1,0 +1,138 @@
+
+:root{
+    /*--primary-color: #333;*/
+    --primary-color: #000000;
+
+    --secondary-color: #fff;
+    --tertiary-color: #5777b6;
+
+    --background-color: #f4f4f4;
+    --border-color: #ddd;
+    --text-color: #666;
+    --text-color-alternate: #999;
+    --link-color: var(--tertiary-color);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container ul li {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+.article {
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 0;
+}
+
+.article:last-child {
+    border-bottom: none;
+}
+
+.article-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.article-description {
+    font-size: 1em;
+    color: var(--text-color);
+}
+
+.article-date {
+    font-size: 0.8em;
+    color: var(--text-color-alternate);
+}
+
+.article-Links {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination {
+    margin: 0 5px;
+}
+
+.disabled {
+    color: #999;
+    cursor: default;
+}
+
+.disabled:hover {
+    text-decoration: none !important;
+}
+
+.pagination:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 10px 0;
+
+    position: fixed;
+    bottom: 0;
+
+    width: 100vw;
+}
