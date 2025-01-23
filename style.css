@@ -25,6 +25,10 @@ a {
     color: var(--tertiary-color);
     text-decoration: none;
 }
+b {
+    color: #1d1d1d;
+    font-weight: bolder;
+}
 
 header {
     background-color: var(--primary-color);

@@ -9,7 +9,7 @@ class DatabaseController
     function __construct()
     {
         // README: Yeah i know this is not a good practice to hardcode the database credentials, but for the sake of simplicity i will leave it like this.
-        $this->PDO = new PDO('mysql:host=localhost;dbname=mvc_database', 'user', 'password');
+        $this->PDO = new PDO('mysql:host=localhost;dbname=mvc_database', 'root', 'luna');
     }
 
     public function requestAllArticles(): array

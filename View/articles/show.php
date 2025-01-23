@@ -5,7 +5,7 @@
 <section class="container">
 
     <article class="article">
-        <h1 class="article-title"><?= $article->title ?></h1>
+        <h1 class="article-title"><?= $article->title ?> - <b><?= $article->author ?></b></h1>
         <p class="article-date"> Published on: <?= $article->formatPublishDate() ?></p>
         <p class="article-description"><?= $article->description ?></p>
 
@@ -13,7 +13,7 @@
             <?php if ($article->id > 1) : ?>
                 <a href="index.php?page=articles-show&id=<?= $article->id - 1 ?>" class="pagination">Previous article</a>
             <?php else: ?>
-                <a  class="pagination disabled">Next article</a>
+                <a  class="pagination disabled">Previous article</a>
             <?php endif; ?>
 
 
